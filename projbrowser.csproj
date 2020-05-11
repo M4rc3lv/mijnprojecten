@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF905619-96CC-45F2-A23F-7EC5DF7FA226}</ProjectGuid>
+    <ProjectTypeGuids>{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>projbrowser</RootNamespace>
+    <AssemblyName>projbrowser</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+    <Content Include="Global.asax" />
+    <Content Include="Default.aspx" />
+    <Content Include="client\w3.css" />
+    <Content Include="client\bladeren.css" />
+    <Content Include="client\icons.js" />
+    <Content Include="client\materialdesignicons.css" />
+    <Content Include="client\jquery-3.5.0.min.js" />
+    <Content Include="client\blader.js" />
+    <Content Include="client\spinner.css" />
+    <Content Include="client\fonts\materialdesignicons-webfont.eot" />
+    <Content Include="client\fonts\materialdesignicons-webfont.woff" />
+    <Content Include="client\fonts\materialdesignicons-webfont.ttf" />
+    <Content Include="pix\logo.png" />
+    <Content Include="client\prism.css" />
+    <Content Include="client\prism.js" />
+    <Content Include="Ashx\Tree.ashx" />
+    <Content Include="Ashx\Scad.ashx" />
+    <Content Include="Ashx\Files.ashx" />
+    <Content Include="Ashx\Actie.ashx" />
+    <Content Include="Ashx\Stl.ashx" />
+    <Content Include="Ashx\Pix.ashx" />
+    <Content Include="Ashx\GetCount.ashx" />
+    <Content Include="client\editor.js" />
+    <Content Include="Ashx\GetFileView.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Tree.ashx.cs">
+      <DependentUpon>Tree.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Ashx\Scad.ashx.cs">
+      <DependentUpon>Scad.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Files.ashx.cs">
+      <DependentUpon>Files.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Actie.ashx.cs">
+      <DependentUpon>Actie.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Stl.ashx.cs">
+      <DependentUpon>Stl.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\Pix.ashx.cs">
+      <DependentUpon>Pix.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\GetCount.ashx.cs">
+      <DependentUpon>GetCount.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Ashx\GetFileView.ashx.cs">
+      <DependentUpon>GetFileView.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pix\" />
+    <Folder Include="Ashx\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="client\fonts\materialdesignicons-webfont.woff2" />
+    <None Include="convert.scad">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8086" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

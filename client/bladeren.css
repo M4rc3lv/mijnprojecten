@@ -1,0 +1,137 @@
+﻿:root {
+ --paars: #BC58B7;
+ --paarsbg:#9B9EFF;
+ --grijsbg:#E5E5E5;
+ --lichtrand:#87E0FF;
+ --lichtscad:#FCF3B0;
+ --lichtpix:#FFB0B0;
+}
+
+.m {
+ width:1100px;
+ margin:0 auto; 
+}
+.br{ 
+ clear:both;
+}
+.br2 {
+ border-top:solid 1px var(--paars); 
+}
+
+.toolbar {
+ border-bottom:solid 1px var(--paars);
+ padding:4px;
+}
+.w3-row:after {
+ border-bottom:solid 1px var(--paars);
+}
+.toolbar img {
+ height:40px;
+}
+#tree {
+ width:300px;
+ font-family:monospace;
+ min-height: 80px; 
+ margin-top:8px;
+}
+#tree a {
+ display:block;
+ text-decoration:none; 
+}
+.treecol {
+ padding-top:8px;
+ width:300px;
+}
+#treeicons {
+ font-size:2em;
+}
+#treeicons i {
+ cursor:pointer;
+}
+.padwrapper {
+ font-family:monospace;
+ font-weight:bold;
+ padding-bottom:8px;
+ padding-top:8px;
+ border-bottom:solid 1px var(--paars)
+}
+.pad, #count {
+ display:inline-block;
+}
+#count {float:right;padding-right:8px;}
+code {
+ font-size:20px;
+}
+
+#bestandsnaam {
+
+ margin-top:4px;
+ padding:4px;
+ border-radius:4px;
+ margin-bottom:4px;
+ padding-left:8px;
+}
+.active {color:gray}
+
+#spinnerviewer, #bestandsviewer, #spinnerviewerT {
+ display:none;
+}
+#spinnerviewer, #spinnerviewerT {
+ height:200px;
+}
+
+.scad2, .stl2, .pix2 {
+ width:186px;
+ float:left;
+ height:210px;
+ overflow:hidden; 
+ margin-left:4px;
+ margin-bottom:4px;
+ background:var(--lichtrand);
+ padding:4px; 
+ position:relative;
+}
+.scad2 {
+  background:var(--lichtscad);
+}
+.pix2 {
+  background:var(--lichtpix);
+}
+
+.ostools {
+ position:absolute;
+ left:8px; top:8px;
+ z-index:100;
+ font-size:1.2em;
+ cursor:pointer;
+ display:none;
+}
+.cpt {
+ margin-top:2px;
+ text-align:center;
+}
+
+.fnScad {
+ color:#C5AA22!important; 
+}
+.fnSTL {
+ color:#4474E0!important; 
+}
+.fnPix {
+ color:#C28585!important;
+}
+.fnFile {
+color:black!important;
+}
+.muis {
+ cursor:default;
+}
+
+.notclickable {
+ cursor:default!important;
+ color:gray!important;
+}
+
+.LaadMeer {
+ AAPposition:relative;
+}
